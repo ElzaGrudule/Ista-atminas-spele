@@ -11,23 +11,20 @@
 }
 
 .atminasSpele {
-  width: 600px;
   height: 600px;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   perspective: 1000px;
 }
 
 .kartite {
-  width: 150px;
-  height: 150px;
-  margin: 5px;
+  flex: 0 1 15%;
   position: static;
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform 0.5s;
 }
-
 .kartite:active {
   transform: scale(0.97);
   transition: transform 0.2s;
