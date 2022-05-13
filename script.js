@@ -68,7 +68,7 @@ s.font="30px Verdana";
 s.textAlign="right";
 s.fillStyle="white";
 function taimeris() {
-  laiks = 6;
+  laiks = 60;
     s.clearRect(0,0,100,30);
     s.fillText(laiks,95,28);
   var izpildit = setInterval(function() {
@@ -84,8 +84,7 @@ function taimeris() {
     punktiKopa = 50-klikski;
     console.log("Beigu rezultāts ir ", punktiKopa);
     s.fillStyle="white";
-    alert("Beidzies laiks!\nJa gribi būt topā, spied 'Labi'!\nTavs rezultāts - " + punktiKopa);
-    window.location="speletajuTops.html";
+    alert("Beidzies laiks!\nTavs rezultāts - " + punktiKopa);
   }
   }, 1000);
 }
